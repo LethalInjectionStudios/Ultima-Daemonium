@@ -7,16 +7,27 @@ public class Character2DController : MonoBehaviour
 {
     public float movementSpeed = 1f;
     public float jumpForce = 1f;
+    public static Character2DController _instance;
 
     private Rigidbody2D _rigidbody;
     private AudioController _audioController;
+    private IInteractable _interactable;
 
     private float _movement;
-
     private bool _jumped = false;
 
     private void Awake()
     {
+        if (_instance != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            _instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+
         _rigidbody = GetComponentInParent<Rigidbody2D>();
         _audioController = GetComponentInParent<AudioController>();
     }
@@ -34,6 +45,14 @@ public class Character2DController : MonoBehaviour
         {
             _jumped = true;
         }
+
+        if (Input.GetKey(KeyCode.E))
+        {
+            if(_interactable != null)
+            {
+                _interactable.Interact();
+            }
+        }
     }
 
     private void FixedUpdate()
@@ -44,7 +63,20 @@ public class Character2DController : MonoBehaviour
         {
             _rigidbody.velocity = Vector2.up * jumpForce;
             _jumped = false;
-            _audioController.PlayJump();
+            //_audioController.PlayJump();
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.GetComponent<IInteractable>() != null)
+        {
+            _interactable = collision.gameObject.GetComponent<IInteractable>();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        _interactable = null;
     }
 }
