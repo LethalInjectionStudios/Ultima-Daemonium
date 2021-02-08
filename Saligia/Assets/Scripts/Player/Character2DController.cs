@@ -5,8 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(AudioController))]
 public class Character2DController : MonoBehaviour
 {
-    public float movementSpeed = 1f;
-    public float jumpForce = 1f;
+    public float movementSpeed = 5f;
+    public float jumpForce = 15f;
     public static Character2DController _instance;
 
     private Rigidbody2D _rigidbody;

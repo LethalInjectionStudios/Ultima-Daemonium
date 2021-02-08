@@ -1,15 +1,17 @@
-﻿Lust (Luxuria) - represented by the colour blue and symbolized by the cow and the snake.
+﻿1) Purgatory - Hub Level
 
-Gluttony (Gula) - represented by the colour orange and symbolized by the pig.
+2) Lust (Luxuria) - represented by the colour blue and symbolized by the cow and the snake. 
 
-Greed (Avaritia) - represented by the colour yellow and symbolized by the frog.
+3) Gluttony (Gula) - represented by the colour orange and symbolized by the pig.
 
-Sloth (Acedia) - represented by the colour light blue and symbolized by the goat.
+4) Greed (Avaritia) - represented by the colour yellow and symbolized by the frog.
 
-Wrath (Ira) - represented by the colour red and symbolized by the bear.
+5) Sloth (Acedia) - represented by the colour light blue and symbolized by the goat.
 
-Envy (Invidia) - represented by the colour green and symbolized by the dog.
+6) Pride (Superbia) - represented by the colour purple and symbolized by three animals: the lion, the peafowl, and the horse.
 
-Pride (Superbia) - represented by the colour purple and symbolized by three animals: the lion, the peafowl, and the horse.
+7) Wrath (Ira) - represented by the colour red and symbolized by the bear.
 
-Saligia - Final Boss
+8) Envy (Invidia) - represented by the colour green and symbolized by the dog.
+
+9) Saligia - Final Boss
